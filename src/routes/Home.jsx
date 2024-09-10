@@ -7,11 +7,12 @@ const Home = () => {
 
     // Imagen de encabezado o slider
     const masthead = (
-        <div id="encabslider" >
+        <div id="encabslider"
+        >
             <img
                 src="/mastehead3.png"
                 alt="Descripción de la imagen"
-                style={{ width: "100%" }}
+                style={{ width: "100%" , paddingTop:'80px'}}
             />
         </div>
     );
@@ -36,7 +37,7 @@ const Home = () => {
                                     className="nav-link text-dark"
                                     style={{
                                         width: "100%", cursor: "pointer", borderRadius: "30px",
-                                        backgroundColor: "#ffefc7", marginTop:"10px", marginBottom:"10px"
+                                        backgroundColor: "#ffefc7", marginTop: "10px", marginBottom: "10px"
 
                                     }}
                                     href="https://meet.google.com/uty-jvtm-xdf"
