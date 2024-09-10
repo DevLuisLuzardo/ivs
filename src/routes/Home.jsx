@@ -25,7 +25,7 @@ const Home = () => {
                     <div>
                         <img
                             style={{ width: "100%", cursor: "pointer", borderRadius: "30px" }}
-                            src="../src/imgs/conecta_meet.png"
+                            src="/conecta_meet.png"
                             alt="conecta con nosotros meet"
                         />
                     </div>
@@ -53,7 +53,7 @@ const Home = () => {
                     <div>
                         <img
                             style={{ width: "100%", cursor: "pointer", borderRadius: "30px" }}
-                            src="../src/imgs/devocionalesenlinea.png"
+                            src="/devocionalesenlinea.png"
                             alt="devocionales online"
                         />
                         <a
@@ -68,7 +68,7 @@ const Home = () => {
                                     borderRadius: "30px",
                                     float: "right",
                                 }}
-                                src="../src/imgs/iraencab.png"
+                                src="/iraencab.png"
                                 alt="ir a encab"
                             />
                         </a>
@@ -84,7 +84,7 @@ const Home = () => {
                                     borderRadius: "30px",
                                     float: "right",
                                 }}
-                                src="../src/imgs/irapie.png"
+                                src="./irapie.png"
                                 alt="ir a pie"
                             />
                         </a>

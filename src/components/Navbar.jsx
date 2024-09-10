@@ -13,7 +13,7 @@ const Navbar = () => {
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 
                 <NavLink to="/">
-                    <img src="../src/imgs/ivs_logo_3-1.png" alt="Logo" width="25px" />
+                    <img src="/ivs_logo_3-1.png" alt="Logo" width="25px" />
                 </NavLink>
                 <span className="navbar-brand" style={{ textDecoration: 'none' }}>IVS</span>
 
