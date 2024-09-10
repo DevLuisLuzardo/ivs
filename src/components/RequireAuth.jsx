@@ -8,7 +8,7 @@ const RequireAuth = ({ children }) => {
 
   if (!user) {
     //Acceso publico a la pagina
-    return <Navigate to="/Home" />
+    return <Navigate to="/" />
   }
 
   return children;

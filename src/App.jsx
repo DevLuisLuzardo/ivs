@@ -23,9 +23,9 @@ const App = () => {
         <Route
           path="/"
           element={
-            <RequireAuth>
+            
               <Home />
-            </RequireAuth>
+            
           }
         />
         <Route
