@@ -22,7 +22,7 @@ const Home = () => {
             <div className="row">
                 {/* Conecta a Mmeet */}
                 <div className="col-sm-5">
-                    <div>
+                    <div id="accederadevocionales">
                         <img
                             style={{ width: "100%", cursor: "pointer", borderRadius: "30px" }}
                             src="/conecta_meet.png"
@@ -33,11 +33,12 @@ const Home = () => {
                         <ul className="nav nav-pills flex-column">
                             <li className="nav-item">
                                 <a
-                                    className="nav-link"
-                                    style={{ width: "100%", cursor: "pointer", borderRadius: "30px",
-                                    backgroundColor: "#f2f2f7"
-                                    
-                                     }}
+                                    className="nav-link text-dark"
+                                    style={{
+                                        width: "100%", cursor: "pointer", borderRadius: "30px",
+                                        backgroundColor: "#ffefc7", marginTop:"10px", marginBottom:"10px"
+
+                                    }}
                                     href="https://meet.google.com/uty-jvtm-xdf"
                                 >
                                     IVS
@@ -108,7 +109,7 @@ const Home = () => {
                 {/* Section: Social media */}
                 <section id="about" className="bg-dark text-white">
                     <div className="container">
-                        <div className="row" style={{ paddingTop: "100px", paddingBottom: "80px" }}>
+                        <div className="row" style={{ paddingTop: "100px", paddingBottom: "80px", textAlign: "left" }}>
                             <div className="col-md-2">
                                 <h6>
                                     <b>Devocionales</b>
@@ -116,9 +117,9 @@ const Home = () => {
                                 <ul className="navbar-nav">
                                     <li>
                                         <a
-                                            className="nav-link "
-                                            style={{ cursor: "pointer", float: "left" }}
-                                            href="https://meet.google.com/uty-jvtm-xdf"
+                                            className="nav-link"
+                                            href="#accederadevocionales"
+                                            style={{ textDecoration: 'none', paddingRight: '15px' }}
                                         >
                                             Ivs
                                         </a>

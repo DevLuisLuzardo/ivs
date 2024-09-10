@@ -11,7 +11,7 @@ const Navbar = () => {
         <>
 
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                
+
                 <NavLink to="/">
                     <img src="/ivs_logo_3-1.png" alt="Logo" width="25px" />
                 </NavLink>
@@ -20,7 +20,12 @@ const Navbar = () => {
                 <NavLink to="/" className="nav-link mx-2"></NavLink>
 
                 <div className="ms-auto">
+                    <a className="text-dark"
+                        href="#accederadevocionales"
+                        style={{ textDecoration: 'none' , paddingRight:'15px'}}
+                    >
                     Devocionales
+                    </a>
                 </div>
 
             </nav>

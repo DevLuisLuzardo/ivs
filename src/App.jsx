@@ -17,15 +17,15 @@ const App = () => {
       {/* 
       <h1>App Encab</h1> 
       */}
-      
+
       <Routes>
         //Agregar Routes en RequireAuth
         <Route
           path="/"
           element={
-            
-              <Home />
-            
+            //<RequireAuth>
+            <Home />
+            //</RequireAuth>
           }
         />
         <Route
@@ -36,7 +36,7 @@ const App = () => {
             </RequireAuth>
           }
         />
-        <Route path="/home" element={<Home />} /> 
+        <Route path="/home" element={<Home />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
