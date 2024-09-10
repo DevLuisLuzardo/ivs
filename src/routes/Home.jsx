@@ -9,7 +9,7 @@ const Home = () => {
     const masthead = (
         <div id="encabslider" >
             <img
-                src="../src/imgs/mastehead3.png"
+                src="/mastehead3.png"
                 alt="Descripción de la imagen"
                 style={{ width: "100%" }}
             />
