@@ -1,18 +1,20 @@
+
 .container {
   display: flex;
+  height: 100vh;
 }
 
 .sidebar {
+  height: 100%;
   width: 0;
-  height: 100vh;
   position: fixed;
+  z-index: 1;
   top: 0;
   right: 0;
   background-color: #111;
+  overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
-  overflow-x: hidden;
-  z-index: 1;
 }
 
 .sidebar.open {
@@ -53,17 +55,18 @@
   background-color: #444;
 }
 
-.main {
-  flex: 1;
-  padding: 16px;
+#main {
   transition: margin-right 0.5s;
+  padding: 16px;
+  width: 100%;
+  /* Ensure main takes up full available width */
 }
 
-.main.open {
+#main.open {
   margin-right: 250px;
 }
 
-/* Estilos para pantallas pequeñas */
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidebar {
     padding-top: 15px;
@@ -72,5 +75,4 @@
   .sidebar a {
     font-size: 18px;
   }
-}
 }
