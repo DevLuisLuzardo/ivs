@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: flex;
+  /* Ajusta el ancho según tu preferencia */
+  /* Otros estilos para el sidebar */
+}
+
+.content {
+  flex: 1;
+  /* El contenido ocupará el espacio restante */
+  /* Otros estilos para el contenido */
+}
+
+li {
+  list-style-type: none;
+}
+
