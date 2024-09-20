@@ -21,6 +21,9 @@ import Homeimg from "./assets/inicio1.png";
 import Mision from "./routes/Mision"; // Importa el componente Misión
 import Misionimg from "./assets/mision1.png";
 
+import Vision from "./routes/Vision"; // Importa el componente Vision
+import Visionimg from "./assets/vision1.png";
+
 const App = () => {
   return (
     //renderiza contenido visible en la pantalla
@@ -51,7 +54,17 @@ const App = () => {
                 />
               </Link>
             </li>
-            
+            {/* elemento 3 :  */}
+            <li>
+              <Link to="/Vision">
+                <SidebarItem
+                  icon={
+                    <img src={Visionimg} alt="Vision" width="25" height="25" />
+                  }
+                  text="Visión"
+                />
+              </Link>
+            </li>
           </Sidebar>
         </div>
         <div className="content">
@@ -75,12 +88,12 @@ const App = () => {
             />
             <Route path="/home" element={<Home />} />
             <Route path="/Mision" element={<Mision />} />
+            <Route path="/Vision" element={<Vision />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
       </div>
       {/* fin. conte. princi... */}
-
     </>
     //fin. renderiza...
   );
