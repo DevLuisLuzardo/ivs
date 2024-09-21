@@ -3,18 +3,35 @@
 }
 
 .sidebar {
-  width: flex;
-  /* Ajusta el ancho según tu preferencia */
-  /* Otros estilos para el sidebar */
+  width: 250px; /* Ancho del sidebar cuando está expandido */
+  transition: width 0.3s ease-in-out; /* Agrega una transición suave */
+  flex-shrink: 0; /* Impide que el sidebar se encoja */
+}
+
+.sidebar.expanded {
+  width: 60px; /* Ancho del sidebar cuando está contraído */
 }
 
 .content {
   flex: 1;
-  /* El contenido ocupará el espacio restante */
-  /* Otros estilos para el contenido */
+  padding: 20px; /* Agrega espacio para el contenido */
 }
 
-li {
-  list-style-type: none;
+.logo {
+  width: 150px;
+  height: 40px;
+  object-fit: contain; /* Mantener la proporción de la imagen */
 }
 
+/* Estilos para hacer que la imagen sea responsive */
+.imagen-container {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden; /* Evita que la imagen se desborde del contenedor */
+}
+
+.imagen-container img {
+  width: 100%;
+  height: auto;
+  display: block; /* Elimina el espacio adicional debajo de la imagen */
+}

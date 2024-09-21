@@ -6,7 +6,7 @@ const Home = () => {
   const { user, signIn, signOut } = useContext(UserContext);
 
   // Imagen de encabezado o slider
-  const masthead = (
+    const masthead = (
     <div id="encabslider">
       <img
         src="/mastehead3.png"

@@ -28,45 +28,12 @@ const App = () => {
   return (
     //renderiza contenido visible en la pantalla
     <>
-      {/* contenwdor principal vista sitio web */}
+      {/* contenedorr principal vista sitio web */}
       <div className="container">
+        
         {/* contenido sidebar */}
-        <div className="sidebar">
-          {/* ini. cont. sidebar */}
-          <Sidebar>
-            {/* elemento 0 :  */}
-            <li>
-              <Link to="/Home">
-                <SidebarItem
-                  icon={<img src={Homeimg} alt="Home" width="25" height="25" />}
-                  text="Inicio"
-                />
-              </Link>
-            </li>
-            {/* elemento 1 :  */}
-            <li>
-              <Link to="/Mision">
-                <SidebarItem
-                  icon={
-                    <img src={Misionimg} alt="Mision" width="25" height="25" />
-                  }
-                  text="Misión"
-                />
-              </Link>
-            </li>
-            {/* elemento 3 :  */}
-            <li>
-              <Link to="/Vision">
-                <SidebarItem
-                  icon={
-                    <img src={Visionimg} alt="Vision" width="25" height="25" />
-                  }
-                  text="Visión"
-                />
-              </Link>
-            </li>
-          </Sidebar>
-        </div>
+        {/* fin. contenido sidebar */}
+
         <div className="content">
           <Routes>
             //Agregar Routes en RequireAuth

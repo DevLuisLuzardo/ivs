@@ -1,16 +1,17 @@
-import { ChevronFirst, ChevronLast, MoreVertical, Menu } from "lucide-react";
+/* Inicio. Sidebar.jsx */
+
+//import { ChevronFirst, ChevronLast, MoreVertical, Menu } from "lucide-react";
 import logo from "../assets/logo.png";
 import profile from "../assets/profile.png";
 import { createContext, useContext, useState } from "react";
 import { Link } from "react-router-dom";
-import { FaBars } from "react-icons/fa"; // Import the hamburger icon from the FontAwesome library
+//import { FaBars } from "react-icons/fa"; // Import the hamburger icon from the FontAwesome library
 
 import Menuhamb from "../assets/menuhamb.png"; // Reemplaza 'menuhamb.png' por el nombre de tu archivo
 
 const SidebarContext = createContext();
 
 export default function Sidebar({ children }) {
-  
   const [expanded, setExpanded] = useState(true);
   return (
     <>
@@ -52,7 +53,6 @@ export default function Sidebar({ children }) {
                   iglesiavidaensantidad@gmail.com
                 </span>
               </div>
-              <MoreVertical size={22} />
             </div>
           </div>
         </nav>
@@ -106,3 +106,5 @@ function NavSidebarItem({ icon, text, alert, to }) {
     </Link>
   );
 }
+
+/* Fin. Sidebar.jsx */
