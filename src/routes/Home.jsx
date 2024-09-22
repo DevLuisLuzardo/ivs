@@ -1,18 +1,13 @@
 import { useContext } from "react";
 import { UserContext } from "../context/UserProvider";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 const Home = () => {
   const { user, signIn, signOut } = useContext(UserContext);
 
   // Imagen de encabezado o slider
-    const masthead = (
-    <div id="encabslider">
-      <img
-        src="/mastehead3.png"
-        alt="Descripción de la imagen"
-        style={{ width: "100%" }}
-      />
+  const masthead = (
+    <div id="encabslider" className="imagen-container img-fluid">
+      <img src="/mastehead3.png" alt="Descripción de la imagen" />
     </div>
   );
 
